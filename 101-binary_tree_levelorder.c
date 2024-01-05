@@ -111,5 +111,10 @@ void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int))
 		count++;
 	}
 
-	free_linked_list(head);
+	while (head != NULL)
+	{
+		current = head;
+		head = head->next;
+		free(current);
+	}
 }
