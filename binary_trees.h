@@ -41,7 +41,6 @@ typedef struct link_s
 	struct link_s *next;
 } link_t;
 
-void free_linked_list(link_t *head);
 void binary_tree_print(const binary_tree_t *);
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value);
